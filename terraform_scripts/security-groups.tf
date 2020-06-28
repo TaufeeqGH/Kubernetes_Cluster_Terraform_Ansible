@@ -12,6 +12,6 @@ resource "aws_security_group" "kubernetes_sg" {
         from_port   = 0
         to_port     = 0
         Protocol    = "-1"
-        cidr_blocks = [0.0.0.0/0]
+        cidr_blocks = ["0.0.0.0/0"]
     }
 }
